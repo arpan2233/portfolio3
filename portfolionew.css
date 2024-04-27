@@ -1,0 +1,296 @@
+.aboutcontainer{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 20px;
+}
+.flexcontainer{
+    display: flex;
+    min-width: 700px;
+    max-width: 900px;
+    min-height: 350px;
+    /* border: 1px solid; */
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: rgba(160, 228, 240, 0.712);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3) ;
+}
+.flexcontainer div{
+    max-width: 400px;
+    margin-top: 10px;
+} 
+h2{
+    margin: 30px;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(53, 223, 223, 0.575);
+    height: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+.profileimg{
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+.outer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.languages{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    height: 250px;
+    /* border: 1px solid; */
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+.written{
+    width: 500px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.4);
+    height:150px;
+    border-radius: 10px;
+    background-color: azure;
+}
+.languagecontent{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.languagecontent>div{
+    /* border: 1px solid; */
+    border-radius: 30px;
+    min-width: 70px;
+    height: 40px;
+    background-color: rgb(16, 69, 119);
+}
+.languagecontent>div>p{
+    margin-top: 5px;
+    color: aliceblue;
+}
+.languageimage{
+    min-width: 150px;
+    max-width: 350px;
+    height: 180px;
+    border-radius: 15px;
+}
+.languageimagecontainer{
+    align-self: center;
+}
+.technicalskills{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    justify-content: space-around;
+    height: 300px;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: azure;
+}
+.dsaandoops{
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+}
+h5{
+    text-align: center;
+    height: 60px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(27, 34, 75, 0.87);
+}
+.dsa,.oops{
+    width: 300px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: white;
+}
+.technicalskills .dsaandoops p{
+    padding: 10px;
+}
+.techimage{
+    height: 250px;
+    border-radius: 20px;
+}
+.frameandtool{
+    display: flex;
+    justify-content: space-around;
+}
+.frameandtool img{
+    height: 200px;
+    border-radius: 10px;
+}
+.frameandtool p{
+    font-size: x-large;
+    font-weight: 400;
+    text-align: center;
+}
+.frameandtool .framework p{
+    background-color: rgba(103,58,183,0.9);
+    border-radius: 10px;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+
+}
+.frameandtool .dt p{
+    background-color: rgba(50, 119, 223, 0.9);
+    border-radius: 10px;
+    color: aliceblue;
+    margin: 0;
+    margin-top: 5px;
+}
+.frameandtool>div{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+@media(max-width: 600px){
+    .frameandtool{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .framework, .dt{
+        width: 250px;
+    }
+    .frameandtool img{
+        width: 100%;
+    }
+}
+@media(max-width: 950px){
+    .flexcontainer{
+        flex-direction: column;
+        min-height: 500px;
+        min-width: 300px;
+        padding: 10px;
+    }
+    .languages{
+        flex-direction: column-reverse;
+        min-height: 550px;
+        min-width: 300px;
+        padding: 5px;
+    }
+    .written{
+        width: 300px;
+        height: 270px;
+    }
+    
+    .languagecontent{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .languageimage{
+        width: 100%;
+        align-self: flex-start;
+    }
+    .languagecontent>div{
+        width: 100px;
+        margin-left: 35%;
+    }
+    
+    .technicalskills{
+        flex-direction:  column-reverse;
+        height: 100%;
+        align-items: center;
+    }
+    .dsaandoops{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .dsa,.oops{
+        width: 70%;
+    }
+    .techimage{
+        max-width: 350px;
+        margin-top: 10px;
+    }
+}
+h3{
+    margin-top: 50px;
+    margin-left: 30px;
+    color: aliceblue;
+}
+section{
+    background-color: rgb(102, 166, 223);
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.corousel-container{
+    display: flex;
+    justify-content: center;
+}
+.corouselsize{
+    width: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+.projectheading{
+    background-color: rgba(81, 76, 150, 0.678);
+    border-radius: 10px;
+}
+.projectheading .puzzle{
+    width: 150px
+}
+.projectintro{
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 20px;
+    color:rgb(239, 241, 239);
+    padding: 10px;
+}
+button{
+    width: 100px;
+    border: none;
+    background-color: rgb(158, 210, 226);
+    border-radius: 30px;
+    color: rgb(54, 70, 85);
+    font-weight: 700;
+    margin-top: 10px;
+}
+.puzzleimage{
+    height: 410px;
+}
+h1,h2,h3{
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.7);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact h4{
+    background-color: rgba(101, 105, 105, 0.932);
+    color: white;
+}
+.contact{
+    background-color: rgba(101, 105, 105, 0.932);
+    
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+.social img{
+    height: 40px;
+    border-radius: 10px;
+}
